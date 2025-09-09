@@ -34,21 +34,37 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead" style="
-  background-image: url('assets/img/IMG_7979.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;">
+       <header class="masthead" 
+    style="
+        position: relative;
+        height: 100vh;
+        background-image: url('assets/img/IMG_7979.JPG');
+        background-size: cover;
+        background-position: center;">
+    
+    <!-- Dark overlay -->
+    <div style="
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 50% black */
+    "></div>
+
+    <!-- Content -->
+    <div class="container h-100 d-flex align-items-center justify-content-center text-center" 
+         style="position: relative; z-index: 1;">
+        <h1 class="text-white">Ran (Katie) Tao</h1>
+    </div>
+</header>
+
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-orange font-weight-bold">Meet Katie's Silly Little Projects!</h1>
+                        <h1 class="text-black font-weight-bold">Meet Katie's Silly Little Projects!</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-orange-75 mb-5">If you see this message, it means I'm doing fine. I once thought that having a personal website was an arduous journey for me, but here I am!</p>
+                        <p class="text-black-75 mb-5">If you see this message, it means I'm doing fine. I once thought that having a personal website was an arduous journey for me, but here I am!</p>
                         <a class="btn btn-primary btn-xl" href="#about">Who's Katie?</a>
                     </div>
                 </div>
@@ -69,8 +85,8 @@
         </section>
 
         <style>
-    .text-orange {
-        color: orange;
+    .text-black {
+        color: black;
     }
 </style>
         <!-- Services-->
