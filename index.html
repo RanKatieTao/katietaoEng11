@@ -121,6 +121,63 @@
             </div>
         </section>
              <div class="col-lg-4 col-sm-6">
+     <head>
+  <style>
+    /* Portfolio container */
+    .portfolio-box {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+
+    /* Image should fill container */
+    .portfolio-box img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease; /* optional zoom effect */
+    }
+
+    /* Caption styling */
+    .portfolio-box-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7); /* dark overlay */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;              /* hidden at first */
+      transform: translateY(20px); /* slightly shifted down */
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .portfolio-box:hover .portfolio-box-caption {
+      opacity: 1;
+      transform: translateY(0); /* slide up into place */
+    }
+
+    /* Optional image zoom on hover */
+    .portfolio-box:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Text tweaks */
+    .portfolio-box-caption .project-category {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .portfolio-box-caption .project-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+            
   <!-- Portfolio Item -->
   <a class="portfolio-box" href="#project1Modal" data-bs-toggle="modal">
     <img class="img-fluid" src="assets/img/portfolio/Nametag_CloseShot.JPG" alt="Custom Nametag Close Shot" />
